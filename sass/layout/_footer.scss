@@ -1,0 +1,25 @@
+.footer {
+    background-color: var(--hero-background);
+    padding-top: var(--common-padding-mobile);
+    padding-bottom: var(--common-padding-mobile);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer-thumb {
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        margin-bottom: 0;
+    }
+}
