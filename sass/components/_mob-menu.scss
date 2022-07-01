@@ -25,7 +25,6 @@
     background-color: var(--primary-background);
     z-index: 1;
 
-
     > .container {
         position: relative;
         padding-top: 48px;
@@ -99,6 +98,7 @@
 
 .mob-soc {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .mob-soc__item:not(:last-child) {

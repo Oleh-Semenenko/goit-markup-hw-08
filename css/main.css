@@ -45,6 +45,10 @@ a {
   text-decoration: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-background);
@@ -207,6 +211,7 @@ body {
 
 .mob-soc {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-soc__item:not(:last-child) {
