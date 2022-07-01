@@ -103,14 +103,17 @@
             </div>
         </section>
 
-        <!-- Чем мы занимаемся -->
+    <!-- Чем мы занимаемся -->
         <section class="services">
             <div class="container">
                 <h2 class="services__title">Чем мы занимаемся</h2>
                 <ul class="services__list list">
                     <li class="services__item">
                         <div class="services__thumb">
-                            <img src="./images/box1opt.jpg" alt="Написание кода сайта" width="370" height="294">
+                            <img 
+                            srcset="./images/service1.jpg 1x,
+                                    ./images/service1@2x.jpg 2x"
+                            src="./images/service1.jpg" alt="Написание кода сайта" width="370">
                             <div class="services__overlay">
                                 <p class="services__text">Десктопные приложения</p>
                             </div>
@@ -118,7 +121,10 @@
                     </li>
                     <li class="services__item">
                         <div class="services__thumb">
-                            <img src="./images/box2opt.jpg" alt="Создание макетов мобильных приложений" width="370" height="294">
+                            <img 
+                            srcset="./images/service2.jpg 1x,
+                                    ./images/service2@2x.jpg 2x"
+                            src="./images/service2.jpg" alt="Создание макетов мобильных приложений" width="370">
                             <div class="services__overlay">
                                 <p class="services__text">Мобильные приложения</p>
                             </div>
@@ -126,7 +132,10 @@
                     </li>
                     <li class="services__item">
                         <div class="services__thumb">
-                            <img src="./images/box3opt.jpg" alt="Веб-дизайн" width="370" height="294">
+                            <img 
+                            srcset="./images/service3.jpg 1x,
+                                    ./images/service3@2x.jpg 2x"
+                            src="./images/service3.jpg" alt="Веб-дизайн" width="370">
                             <div class="services__overlay">
                                 <p class="services__text">Дизайнерские решения</p>
                             </div>
@@ -136,13 +145,28 @@
             </div>
         </section>
 
-        <!-- Наша команда -->
+    <!-- Наша команда -->
         <section class="team">
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="members-grid list">
                     <li class="members-grid__item">
-                        <img src="./images/member1opt.jpg" alt="Игорь Демьяненко" width="" height="">
+                        <picture>
+                            <source
+                            srcset="./images/member1-desk.jpg 1x,
+                                    ./images/member1-desk@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <source 
+                            srcset="./images/member1-tab.jpg 1x,
+                                    ./images/member1-tab@2x.jpg 2x"
+                            media="(min-width: 768px)">
+                            <source 
+                            srcset="./images/member1-mob.jpg 1x,
+                                    ./images/member1-mob@2x.jpg 2x"
+                            media="(min-width: 320px)">
+                            <img src="./images/member1-mob.jpg" alt="Игорь Демьяненко" width="450">
+                        </picture>
+                        
                         <div class="members-grid__content">
                             <h3 class="members-grid__title">Игорь Демьяненко</h3>
                             <p class="members-grid__text">Product Designer</p>
@@ -171,7 +195,21 @@
                         </div>
                     </li>
                     <li class="members-grid__item">
-                        <img src="./images/member2opt.jpg" alt="Ольга Репина" width="270" height="260">
+                        <picture>
+                            <source 
+                            srcset="./images/member2-desk.jpg 1x,
+                                    ./images/member2-desk@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <source 
+                            srcset="./images/member2-tab.jpg 1x,
+                                    ./images/member2-tab@2x.jpg 2x" 
+                            edia="(min-width: 768px)">
+                            <source 
+                            srcset="./images/member2-mob.jpg 1x,
+                                    ./images/member2-mob@2x.jpg 2x" 
+                            edia="(min-width: 320px)">
+                            <img src="./images/member2-mob.jpg" alt="Ольга Репина" width="450">
+                        </picture>
                         <div class="members-grid__content">
                             <h3 class="members-grid__title">Ольга Репина</h3>
                             <p class="members-grid__text">Frontend Developer</p>
@@ -200,7 +238,21 @@
                         </div>
                     </li>
                     <li class="members-grid__item">
-                        <img src="./images/member3opt.jpg" alt="Николай Тарасов" width="270" height="260">
+                        <picture>
+                            <source 
+                            srcset="./images/member3-desk.jpg 1x,
+                                    ./images/member3-desk@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <source 
+                            srcset="./images/member3-tab.jpg 1x,
+                                    ./images/member3-tab@2x.jpg 2x" 
+                            edia="(min-width: 768px)">
+                            <source 
+                            srcset="./images/member3-mob.jpg 1x,
+                                    ./images/member3-mob@2x.jpg 2x" 
+                            edia="(min-width: 320px)">
+                            <img src="./images/member3-mob.jpg" alt="Николай Тарасов" width="450">
+                        </picture>
                         <div class="members-grid__content">
                             <h3 class="members-grid__title">Николай Тарасов</h3>
                             <p class="members-grid__text">Marketing</p>
@@ -229,7 +281,21 @@
                         </div>
                     </li>
                     <li class="members-grid__item">
-                        <img src="./images/member4opt.jpg" alt="Михаил Ермаков" width="270" height="260">
+                        <picture>
+                            <source 
+                            srcset="./images/member4-desk.jpg 1x,
+                                    ./images/member4-desk@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                            <source 
+                            srcset="./images/member4-tab.jpg 1x,
+                                    ./images/member4-tab@2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                            <source 
+                            srcset="./images/member4-mob.jpg 1x,
+                                    ./images/member4-mob@2x.jpg 2x" 
+                                    media="(min-width: 320px)">
+                            <img src="./images/member4-mob.jpg" alt="Михаил Ермаков" width="450">
+                        </picture>
                         <div class="members-grid__content">
                             <h3 class="members-grid__title">Михаил Ермаков</h3>
                             <p class="members-grid__text">UI Designer</p>
@@ -403,8 +469,11 @@
                 </div>
                 <div class="agreement">
                     <input type="checkbox" id="checkbox" name="checkbox" class="agreement__checkbox visually-hidden">
-                    <label for="checkbox" class="agreement__text">Соглашаюсь с рассылкой и принимаю
-                        <a href="" class="agreement__link">Условия договора</a>
+                    <label for="checkbox" class="agreement__text">
+                        <div class="agreement__wrap">
+                            <span>Соглашаюсь с рассылкой и принимаю</span>
+                            <a href="" class="agreement__link">Условия договора</a>
+                        </div>
                     </label>
                 </div>
                 <button type="submit" class="modal__send-button">Отправить</button>
