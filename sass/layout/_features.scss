@@ -34,8 +34,6 @@
     @media screen and (min-width: 1200px) {
         width: calc((100% - 90px) / 4);
     }
-    // flex-basis: calc(100% / 4 - var(--common-margin));
-    // margin-left: var(--common-margin);
 }
 
 .features__name {
@@ -50,16 +48,10 @@
     @media screen and (min-width: 768px) {
         text-align: left;
     }
-
-    // width: 270px;
-    // height: 16px;
 }
 
 .features__text {
     line-height: 1.71;
-
-    // width: 270px;
-    // height: 75px;
 }
 
 @include generateIcons($icons);
